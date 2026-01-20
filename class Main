@@ -1,0 +1,30 @@
+public class Main {
+   public static void main(String[] args) {
+       System.out.println("=== Array Queue ===");
+       ArrayQueue aq = new ArrayQueue(3);
+       aq.enqueue(10);
+       aq.enqueue(20);
+       aq.enqueue(30);
+       aq.enqueue(40); // resizing occurs
+       aq.display();
+       aq.peek();
+       aq.findMin();
+       aq.findMax();
+       aq.dequeue();
+       aq.display();
+
+
+       System.out.println("\n=== Linked List Queue ===");
+       LinkedListQueue lq = new LinkedListQueue();
+       lq.enqueue(10);
+       lq.enqueue(20);
+       lq.enqueue(30);
+       lq.enqueue(40);
+       lq.display();
+       lq.peek();
+       lq.findMin();
+       lq.findMax();
+       lq.dequeue();
+       lq.display();
+   }
+}
